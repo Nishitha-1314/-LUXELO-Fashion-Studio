@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXELO – Fashion Studio | Style That Defines You</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    COMPLIMENTARY EXPRESS SHIPPING ON ORDERS ABOVE
+    <span>₹2,999</span> &bull; USE CODE <span>LUXELO50</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="#home" class="brand-logo">
+        <span class="logo-main">LUXELO</span>
+        <span class="logo-sub">Fashion Studio</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle">
+
+      <nav class="nav-links">
+        <a href="#home" onclick="closeMobileNav()">Home</a>
+        <a href="#categories" onclick="closeMobileNav()">Women</a>
+        <a href="#categories" onclick="closeMobileNav()">Men</a>
+        <a href="#categories" onclick="closeMobileNav()">Kids</a>
+        <a href="#offers" onclick="closeMobileNav()">Offers</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button class="cart-btn" onclick="toggleCartDrawer(true)">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Cart</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+
+        <label for="menu-toggle" class="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+
+        <div class="hero-tag">
+          <i class="fa-solid fa-sparkles"></i>
+          Autumn / Winter Couture ’26
+        </div>
+
+        <h1 class="hero-title">
+          STYLE THAT
+          <span>DEFINES YOU</span>
+        </h1>
+
+        <p class="hero-desc">
+          Curated silhouettes crafted from breathable organic silks,
+          tailored linens, and soft blush textures—designed for
+          effortless everyday elegance.
+        </p>
+
+        <div class="hero-cta-group">
+
+          <a href="#collections" class="btn btn-primary">
+            Shop Now <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#categories" class="btn btn-outline">
+            Explore Lookbook
+          </a>
+
+        </div>
+
+        <div class="hero-metrics">
+
+          <div class="metric-box">
+            <h3>120+</h3>
+            <p>Designer Pieces</p>
+          </div>
+
+          <div class="metric-box">
+            <h3>4.9★</h3>
+            <p>Client Rating</p>
+          </div>
+
+          <div class="metric-box">
+            <h3>100%</h3>
+            <p>Ethical Fabrics</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85"
+            alt="Editorial fashion model">
+        </div>
+
+        <div class="hero-floating-card">
+
+          <div class="floating-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+
+          <div>
+            <strong>Studio Capsule ’26</strong>
+            <span>Limited Handcrafted Edition</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories-section section-padding">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-eyebrow">Curated Departments</span>
+        <h2 class="section-title">Shop by <span>Category</span></h2>
+
+        <p class="section-subtitle">
+          Explore refined wardrobing across womenswear, menswear,
+          kidswear, and artisanal accessories.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+
+        <a href="#collections" class="category-card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Women Fashion">
+
+          <div class="category-overlay">
+            <span class="category-count">64 Styles</span>
+            <h3>Women</h3>
+            <span class="category-link">Explore Edit <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="#collections" class="category-card">
+          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=80" alt="Men Fashion">
+
+          <div class="category-overlay">
+            <span class="category-count">48 Styles</span>
+            <h3>Men</h3>
+            <span class="category-link">Explore Edit <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="#collections" class="category-card">
+          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80" alt="Kids Fashion">
+
+          <div class="category-overlay">
+            <span class="category-count">32 Styles</span>
+            <h3>Kids</h3>
+            <span class="category-link">Explore Edit <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="#collections" class="category-card">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Accessories">
+
+          <div class="category-overlay">
+            <span class="category-count">29 Styles</span>
+            <h3>Accessories</h3>
+            <span class="category-link">Explore Edit <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collections -->
+  <section id="collections" class="collections-section section-padding">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-eyebrow">Signature Pieces</span>
+        <h2 class="section-title">Featured <span>Collections</span></h2>
+
+        <p class="section-subtitle">
+          Filter through our New Arrivals, Trending runway favorites,
+          and studio Best Sellers.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs">
+
+        <button class="tab-btn active" onclick="filterProducts('all', this)">
+          All Pieces (8)
+        </button>
+
+        <button class="tab-btn" onclick="filterProducts('new', this)">
+          New Arrivals
+        </button>
+
+        <button class="tab-btn" onclick="filterProducts('trending', this)">
+          Trending
+        </button>
+
+        <button class="tab-btn" onclick="filterProducts('bestseller', this)">
+          Best Sellers
+        </button>
+
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1 -->
+        <article class="product-card" data-collection="new">
+
+          <div class="product-img-box">
+            <span class="collection-badge">New Arrival</span>
+            <span class="discount-pill">-25%</span>
+
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80" alt="Blush Silk Dress">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.9)</span>
+            </div>
+
+            <h3 class="product-name">Blush Silk Midi Wrap Dress</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹4,499</span>
+              <span class="price-original">₹5,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Blush Silk Midi Wrap Dress', 4499)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-collection="bestseller">
+
+          <div class="product-img-box">
+            <span class="collection-badge blush">Best Seller</span>
+            <span class="discount-pill">-30%</span>
+
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80" alt="Linen Blazer">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.8)</span>
+            </div>
+
+            <h3 class="product-name">Cream Tailored Linen Blazer</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹5,599</span>
+              <span class="price-original">₹7,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Cream Tailored Linen Blazer', 5599)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-collection="trending">
+
+          <div class="product-img-box">
+            <span class="collection-badge">Trending</span>
+            <span class="discount-pill">-28%</span>
+
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=700&q=80" alt="Sand Overshirt">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.9)</span>
+            </div>
+
+            <h3 class="product-name">Men's Sand Structured Overshirt</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹3,249</span>
+              <span class="price-original">₹4,499</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Men\'s Sand Structured Overshirt', 3249)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" data-collection="bestseller">
+
+          <div class="product-img-box">
+            <span class="collection-badge blush">Best Seller</span>
+            <span class="discount-pill">-35%</span>
+
+            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=700&q=80" alt="Trench Coat">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(5.0)</span>
+            </div>
+
+            <h3 class="product-name">Obsidian Wool Trench Coat</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹7,799</span>
+              <span class="price-original">₹11,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Obsidian Wool Trench Coat', 7799)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card" data-collection="new">
+
+          <div class="product-img-box">
+            <span class="collection-badge">New Arrival</span>
+            <span class="discount-pill">-20%</span>
+
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80" alt="Cashmere Knit">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.7)</span>
+            </div>
+
+            <h3 class="product-name">Beige Cashmere Ribbed Knit</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹3,999</span>
+              <span class="price-original">₹4,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Beige Cashmere Ribbed Knit', 3999)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card" data-collection="trending">
+
+          <div class="product-img-box">
+            <span class="collection-badge">Trending</span>
+            <span class="discount-pill">-25%</span>
+
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Palazzo Set">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.9)</span>
+            </div>
+
+            <h3 class="product-name">Ivory Pleated Palazzo Set</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹4,875</span>
+              <span class="price-original">₹6,499</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Ivory Pleated Palazzo Set', 4875)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card" data-collection="new">
+
+          <div class="product-img-box">
+            <span class="collection-badge">New Arrival</span>
+            <span class="discount-pill">-30%</span>
+
+            <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=700&q=80" alt="Kids Cotton Set">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.8)</span>
+            </div>
+
+            <h3 class="product-name">Kids Organic Cotton Co-ord Set</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹2,099</span>
+              <span class="price-original">₹2,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Kids Organic Cotton Co-ord Set', 2099)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card" data-collection="bestseller">
+
+          <div class="product-img-box">
+            <span class="collection-badge blush">Best Seller</span>
+            <span class="discount-pill">-22%</span>
+
+            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=80" alt="Crossbody Bag">
+          </div>
+
+          <div class="product-info">
+
+            <div class="product-rating">
+              ★★★★★ <span>(4.9)</span>
+            </div>
+
+            <h3 class="product-name">Rose-Gold Quilted Crossbody Bag</h3>
+
+            <div class="price-row">
+              <span class="price-discounted">₹3,899</span>
+              <span class="price-original">₹4,999</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('Rose-Gold Quilted Crossbody Bag', 3899)">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sale Section -->
+  <section id="offers" class="sale-section">
+    <div class="container">
+
+      <div class="sale-banner">
+
+        <div class="sale-content">
+
+          <span class="sale-pill">Limited Time Archive Event</span>
+
+          <h2>END OF SEASON SALE – <span>UP TO 50% OFF</span></h2>
+
+          <p>
+            Refresh your seasonal wardrobe with iconic studio tailoring,
+            silk eveningwear, and luxury leather goods at exclusive archive prices.
+          </p>
+
+          <div class="promo-code-box">
+            <span>Apply Coupon at Checkout:</span>
+            <strong>LUXELO50</strong>
+          </div>
+
+          <div>
+            <a href="#collections" class="btn btn-blush">
+              Claim 50% Off Edit <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="sale-timer-card">
+
+          <span>Offer Ends In</span>
+
+          <div class="timer-grid">
+
+            <div class="timer-unit">
+              <strong id="timerDays">02</strong>
+              <span>Days</span>
+            </div>
+
+            <div class="timer-unit">
+              <strong id="timerHours">14</strong>
+              <span>Hours</span>
+            </div>
+
+            <div class="timer-unit">
+              <strong id="timerMins">48</strong>
+              <span>Mins</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+
+      <div class="newsletter-box">
+
+        <span class="section-eyebrow">The Studio Insider</span>
+
+        <h2>Join the <span>LUXELO</span> Inner Circle</h2>
+
+        <p>
+          Subscribe for private lookbook previews, early access to seasonal
+          sales, and flat ₹1,000 off your first studio order.
+        </p>
+
+        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)" novalidate>
+
+          <input
+            type="email"
+            id="newsletterEmail"
+            class="newsletter-input"
+            placeholder="Enter your email address..."
+            required>
+
+          <button type="submit" class="btn btn-primary">
+            Subscribe
+          </button>
+
+        </form>
+
+        <p id="newsletterFeedback" class="newsletter-feedback"></p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <span class="logo-main">LUXELO</span>
+          <span class="logo-sub">Fashion Studio</span>
+
+          <p>
+            Modern luxury fashion studio blending timeless editorial
+            tailoring with sustainable, tactile fabrics crafted for every generation.
+          </p>
+
+          <div class="social-icons">
+            <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#home"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#home"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#home"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Women's Edit</a></li>
+            <li><a href="#categories">Men's Tailoring</a></li>
+            <li><a href="#categories">Kids Couture</a></li>
+            <li><a href="#offers">End of Season Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+
+          <ul>
+            <li><a href="#collections">Track Your Order</a></li>
+            <li><a href="#collections">Size & Fit Guide</a></li>
+            <li><a href="#collections">14-Day Easy Returns</a></li>
+            <li><a href="#collections">Shipping Policy</a></li>
+            <li><a href="#collections">Privacy & Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Flagship Studio</h4>
+
+          <ul class="footer-contact">
+
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>42 Atelier Lane, Jubilee Hills, Hyderabad & Bandra West, Mumbai</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 1800-202-LUXE</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>care@luxelostudio.in</span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span>LUXELO – Fashion Studio</span>. All Rights Reserved.</p>
+        <p>Designed & Engineered as a B.Tech Web Development Mini-Project.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cartBackdrop" onclick="toggleCartDrawer(false)"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-drawer-header">
+      <h3>Your Studio Bag</h3>
+
+      <button onclick="toggleCartDrawer(false)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <p>Your shopping bag is currently empty. Add pieces from Featured Collections!</p>
+    </div>
+
+    <div class="cart-summary">
+
+      <div class="cart-total">
+        <span>Estimated Total</span>
+        <span id="cartTotalAmount">₹0</span>
+      </div>
+
+      <button class="btn btn-primary checkout-btn" onclick="checkoutDemo()">
+        Proceed to Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <div>
+      <strong id="toastTitle">Added to Bag</strong>
+      <span id="toastDesc">Item added to your cart.</span>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+
+    let cartItems = [];
+
+    // Close Mobile Navigation
+    function closeMobileNav() {
+      const toggle = document.getElementById('menu-toggle');
+
+      if (toggle) {
+        toggle.checked = false;
+      }
+    }
+
+    // Filter Products
+    function filterProducts(collection, clickedBtn) {
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      clickedBtn.classList.add('active');
+
+      const cards = document.querySelectorAll('.product-card');
+
+      cards.forEach(card => {
+
+        if (collection === 'all' || card.dataset.collection === collection) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+
+      });
+    }
+
+    // Add to Cart
+    function addToCart(productName, price) {
+
+      cartItems.push({
+        name: productName,
+        price: price
+      });
+
+      updateCartUI();
+
+      const badge = document.getElementById('cartBadge');
+
+      badge.classList.remove('bump');
+      void badge.offsetWidth;
+      badge.classList.add('bump');
+
+      setTimeout(() => badge.classList.remove('bump'), 300);
+
+      showToast(
+        'Added to Studio Bag',
+        `${productName} (₹${price.toLocaleString('en-IN')}) added.`
+      );
+    }
+
+    // Update Cart
+    function updateCartUI() {
+
+      const badge = document.getElementById('cartBadge');
+      const list = document.getElementById('cartItemsList');
+      const totalEl = document.getElementById('cartTotalAmount');
+
+      badge.textContent = cartItems.length;
+
+      if (cartItems.length === 0) {
+
+        list.innerHTML = '<p>Your shopping bag is currently empty.</p>';
+        totalEl.textContent = '₹0';
+
+        return;
+      }
+
+      let total = 0;
+
+      list.innerHTML = cartItems.map((item, idx) => {
+
+        total += item.price;
+
+        return `
+          <div class="cart-item-row">
+
+            <div>
+              <strong>${item.name}</strong>
+              <span>₹${item.price.toLocaleString('en-IN')}</span>
+            </div>
+
+            <button onclick="removeCartItem(${idx})">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+
+          </div>
+        `;
+
+      }).join('');
+
+      totalEl.textContent = `₹${total.toLocaleString('en-IN')}`;
+    }
+
+    // Remove Cart Item
+    function removeCartItem(index) {
+
+      cartItems.splice(index, 1);
+
+      updateCartUI();
+    }
+
+    // Toggle Cart Drawer
+    function toggleCartDrawer(open) {
+
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartBackdrop');
+
+      if (open) {
+
+        drawer.classList.add('open');
+        backdrop.classList.add('open');
+
+      } else {
+
+        drawer.classList.remove('open');
+        backdrop.classList.remove('open');
+
+      }
+    }
+
+    // Checkout
+    function checkoutDemo() {
+
+      if (cartItems.length === 0) {
+
+        showToast('Bag Empty', 'Please add at least one piece before checking out.');
+
+        return;
+      }
+
+      toggleCartDrawer(false);
+
+      showToast(
+        'Order Initiated',
+        `Thank you! Proceeding with ${cartItems.length} item(s).`
+      );
+    }
+
+    // Newsletter Subscription
+    function handleNewsletterSubmit(event) {
+
+      event.preventDefault();
+
+      const input = document.getElementById('newsletterEmail');
+      const feedback = document.getElementById('newsletterFeedback');
+
+      const email = input.value.trim();
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(email)) {
+
+        feedback.style.color = '#B03A48';
+
+        feedback.textContent = 'Please enter a valid email address.';
+
+        input.focus();
+
+        return;
+      }
+
+      feedback.style.color = '#2E6F40';
+
+      feedback.textContent =
+        `Welcome to LUXELO! Your ₹1,000 welcome voucher has been sent to ${email}.`;
+
+      input.value = '';
+
+      showToast('Subscribed!', 'Check your inbox for your welcome voucher.');
+    }
+
+    // Toast Notification
+    let toastTimer;
+
+    function showToast(title, desc) {
+
+      const toast = document.getElementById('toast');
+
+      document.getElementById('toastTitle').textContent = title;
+
+      document.getElementById('toastDesc').textContent = desc;
+
+      toast.classList.add('show');
+
+      clearTimeout(toastTimer);
+
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3600);
+    }
+
+  </script>
+
+</body>
+</html> fashion html
