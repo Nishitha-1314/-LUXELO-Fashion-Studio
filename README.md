@@ -1,4 +1,4 @@
-NAME-NASINA NISHITHA ,SECTION-3, ROLL NO.-N26V01A0254
+NAME-NASINA NISHITHA ,SECTION-3, ROLL NO.-N26V01A0254,DEPLOY LINK-https://luxelofashionstudio.vercel.app?_vercel_share=LFLkDSEqYUhW0aPHpAa4JIGghCVwfDgR
 # -LUXELO-Fashion-Studio
 # 🛍️ LUXELO – Fashion Studio
 
